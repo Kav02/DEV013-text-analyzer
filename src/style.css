@@ -1,0 +1,32 @@
+body {
+    background-image: url('/images/AnalizadorFondo.jpg');
+    background-size: cover;
+    margin: 0; 
+    padding: 0;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #142C86;
+    font-family: Roboto, sans-serif; 
+}
+p {
+    position: relative;
+    margin: auto;
+    color:  #142C86;
+    font-family: Roboto, sans-serif; 
+}
+textarea[name = "user-input"]{
+    display:block;
+    margin: auto;
+    width: 80vw;
+    outline: none;
+    background-color: #F6F6F6;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+}  

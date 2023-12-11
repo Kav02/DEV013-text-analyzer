@@ -5,20 +5,26 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  </style>
 </head>
 <h1>Analizador de texto</h1>
 <body>
   <script src="index.js" type="module"></script>
-<p>Escribe o pega el texto que deseas analizar en el siguiente cuadro: </p> 
-<textarea name="user-input" rows="5" cols="40">Escribe aquí</textarea>
-<ul>
-  <li>Caracteres: </li>
-  <li>Caracteres sin espacios: </li>
-  <li>Palabras: </li>
-  <li>Números: </li>
-  <li>Suma números: </li>
-  <li>Promedio longitud: </li>
-</ul>
 
+  <p>Vamos a analizar un texto: </p> 
+  <textarea name="user-input" rows="15" cols="40">Escribe o pega aquí el texto</textarea>
+  <ul>
+    <li data-testid="character-count">Caracteres: </li>
+    <li data-testid="character-no-spaces-count"> Caracteres sin espacios: </li>
+    <li data-testid="word-count">Palabras: </li>
+    <li data-testid="number-count">Números: </li>
+    <li data-testid="number-sum">Suma números: </li>
+    <li data-testid="word-lenght-average">Promedio longitud: </li>
+  </ul>
+<footer>
+  <p>Korin Amador</p>
+</footer>
 </body>
 </html>
