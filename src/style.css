@@ -1,32 +1,52 @@
 body {
-    background-image: url('/images/AnalizadorFondo.jpg');
-    background-size: cover;
-    margin: 0; 
+    background-image: url('../img/analizadorfondo.png');
+    background-size: 100vw 100vh;
+    margin: 0;
     padding: 0;
-}
+    }
 h1 {
     display: flex;
-    justify-content: center;
+    margin-left: 40px;
+    font-size: 6vw;
     color: #142C86;
     font-family: Roboto, sans-serif; 
 }
-p {
-    position: relative;
-    margin: auto;
-    color:  #142C86;
+h2 {
+    display: flex;
+    margin-left: 40px;
+    color: #142C86;
     font-family: Roboto, sans-serif; 
 }
-textarea[name = "user-input"]{
-    display:block;
-    margin: auto;
-    width: 80vw;
+textarea[name="user-input"]{
+    display: block;
+    margin-left: 40px;
+    width: 60vw;
     outline: none;
     background-color: #F6F6F6;
 }
-footer {
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ul li {
+    border:1px solid black ;
+}
+#reset-button{
     display: flex;
-    justify-content: center;
-    padding: 5px;
+    margin:auto; 
+    text-align: center;   
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100vw;
     background-color: #45a1ff;
-    color: #fff;
+    color:#142C86;
 }  

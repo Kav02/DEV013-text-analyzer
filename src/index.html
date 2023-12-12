@@ -9,22 +9,25 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
   </style>
 </head>
-<h1>Analizador de texto</h1>
+<header>
+  <h1>Analizador de texto</h1>
+  <h2>Vamos a analizar un texto: </h2>
+</header>
 <body>
   <script src="index.js" type="module"></script>
-
-  <p>Vamos a analizar un texto: </p> 
   <textarea name="user-input" rows="15" cols="40">Escribe o pega aquí el texto</textarea>
   <ul>
-    <li data-testid="character-count">Caracteres: </li>
+    <li class="lista" data-testid="character-count">Caracteres: </li>
     <li data-testid="character-no-spaces-count"> Caracteres sin espacios: </li>
     <li data-testid="word-count">Palabras: </li>
     <li data-testid="number-count">Números: </li>
     <li data-testid="number-sum">Suma números: </li>
     <li data-testid="word-lenght-average">Promedio longitud: </li>
   </ul>
+<button id="reset-button">Limpiar Métricas
+</button>  
 <footer>
-  <p>Korin Amador</p>
+  <p>Desarrollado por: Korin Amador</p>
 </footer>
 </body>
 </html>
