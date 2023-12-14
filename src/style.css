@@ -4,16 +4,17 @@ body {
     margin: 0;
     padding: 0;
     }
-h1 {
+header {
     display: flex;
     margin-left: 40px;
-    font-size: 6vw;
+    font-size: 3vw;
     color: #142C86;
     font-family: Roboto, sans-serif; 
 }
 h2 {
     display: flex;
     margin-left: 40px;
+
     color: #142C86;
     font-family: Roboto, sans-serif; 
 }
@@ -25,12 +26,21 @@ textarea[name="user-input"]{
     background-color: #F6F6F6;
 }
 ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
 }
-ul li {
-    border:1px solid black ;
-}
+.lista {
+    display: inline-block;
+    padding: 10 px;
+    margin:auto; 
+    text-align: center;   
+    background-color: #142C8D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+
+}    
 #reset-button{
     display: flex;
     margin:auto; 
@@ -47,6 +57,7 @@ footer {
     position: fixed;
     bottom: 10px;
     width: 100vw;
+    text-align: center;
     background-color: #45a1ff;
     color:#142C86;
 }  
