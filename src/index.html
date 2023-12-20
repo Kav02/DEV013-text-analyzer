@@ -8,27 +8,31 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
   </style>
-  </head>
+  <script src="index.js" type="module"></script>
+</head>
 <header>
   <h1>Analizador de texto</h1>
 </header>
+
 <body>
-  
+
   <h2>Vamos a analizar un texto: </h2>
   <textarea name="user-input" rows="15" cols="40" placeholder="Escribe o pega aquí el texto"></textarea>
+
   <ul>
-    <li class="lista" data-testid="character-count">Caracteres: 0 </li>
-    <li class="lista" data-testid="character-no-spaces-count"> Caracteres sin espacios: 0</li>
-    <li class="lista" data-testid="word-count">Palabras: 0</li>
-    <li class="lista" data-testid="number-count">Números: 0</li>
-    <li class="lista" data-testid="number-sum">Suma números: 0</li>
-    <li class="lista" data-testid="word-lenght-average">Promedio longitud: 0</li>
+    <li class="lista" data-testid="character-count">Caracteres: </li>
+    <li class="lista" data-testid="character-no-spaces-count"> Caracteres sin espacios: </li>
+    <li class="lista" data-testid="word-count">Palabras: </li>
+    <li class="lista" data-testid="number-count">Números: </li>
+    <li class="lista" data-testid="number-sum">Suma números: </li>
+    <li class="lista" data-testid="word-lenght-average">Promedio longitud: </li>
   </ul>
-<button id="reset-button">Limpiar Métricas
-</button> 
-<footer>
-  <p>Desarrollado por: Korin Amador</p>
-</footer>
-<script src="index.js" type="module"></script>
+
+  <button id="reset-button">Limpiar Métricas
+  </button>
+  <footer>
+    <p>Desarrollado por: Korin Amador</p>
+  </footer>
 </body>
+
 </html>
