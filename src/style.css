@@ -32,7 +32,10 @@ textarea[name="user-input"] {
 ul {
     list-style: none;
     display: flex;
-}
+    width: 60%;
+    column-count: 2;
+    }
+
 
 .lista {
     margin-top: 2%;

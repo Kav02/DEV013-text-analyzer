@@ -1,7 +1,8 @@
 const analyzer = {
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    return text.split(" ").length;
+    const words = text.split(" ").length;
+    return words;
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
@@ -10,20 +11,31 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     //Remover los espacios
-    let withoutSpaces = text.replace(/[^\w\s]/g,"")//Busca lo que no son letras, ni numeros y los reemplaza
+    const withoutSpaces = text
+      .replace(/[^\w\s]/g, "") //Busca lo que no son letras, ni numeros y los reemplaza
       .replace(/\s/g, ""); // Busca los espacios en blanco /\s/, la g indica global para que busque todos y "" elimina estos espacios
-    console.log(withoutSpaces)
     return withoutSpaces.length; //Contar sin espacios
   },
   getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  
+    //Total de caracteres sin espacios entre la cantidad de palabras
+    const sumCaracteres = text.replace(/ /g,"").length;
+    const sumWords = analyzer.getWordCount(text);
+    const averageWords = sumCaracteres / sumWords;
+    return Number(averageWords.toFixed(2));
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const countNumbers = (text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g) || []).length; //d+ busca los numeros y || [] devuelve un array vacio
+    return countNumbers;
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    let sum = 0;
+    for (const matrizNumbers of text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g) || []) {
+      sum += Number(matrizNumbers);
+    }
+    return sum;
   },
 };
 
