@@ -1,16 +1,28 @@
 const analyzer = {
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const words = text.split(" ").length;
-    return words;
+    const nwords = text.split(" ");
+    if (nwords){
+      let words = 0;
+      for (let i = 0; i< nwords.length; i++){
+        words++;
+      }
+      return words;
+    }
+    else {
+      return 0;
+    }
   },
+
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
     return text.length; //Se usa length para obtener el total de caracteres
+    
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     //Remover los espacios
+    
     const withoutSpaces = text
       .replace(/[^\w\s]/g, "") //Busca lo que no son letras, ni numeros y los reemplaza
       .replace(/\s/g, ""); // Busca los espacios en blanco /\s/, la g indica global para que busque todos y "" elimina estos espacios
@@ -32,10 +44,11 @@ const analyzer = {
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     let sum = 0;
-    for (const matrizNumbers of text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g) || []) {
+    for (const matrizNumbers of text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g) || []) { //Se usa for of porque debe recorrer el array
       sum += Number(matrizNumbers);
     }
     return sum;
+    
   },
 };
 
