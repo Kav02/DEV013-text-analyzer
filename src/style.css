@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url("../img/analizadorfondo.png");
     background-size: 100vw 100vh;
     margin: 0;
@@ -6,7 +8,7 @@ body {
 }
 
 header {
-    display: flex;
+    /*display: flex;*/
     margin-left: 40px;
     font-size: 3vw;
     color: #142c86;
@@ -14,9 +16,8 @@ header {
 }
 
 h2 {
-    display: flex;
+    /*display: flex;*/
     margin-left: 40px;
-
     color: #142c86;
     font-family: Roboto, sans-serif;
 }

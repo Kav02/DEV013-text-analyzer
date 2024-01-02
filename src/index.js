@@ -70,6 +70,5 @@ function clear_textarea() {
   numberCountLi.innerHTML= "Números: " + totalNumbers;
   numberSumLi.innerHTML = "Suma: " + totalSum;
   averageLengthLi.innerHTML = "Longitud Promedio: " + averageLength;
-
 }
 button.addEventListener("click", clear_textarea);
