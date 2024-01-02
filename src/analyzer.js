@@ -38,6 +38,10 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    /* \b: Busca límite de palabra. \d+: Busca los numeros (0-9). (\.\d+)?: Busca un punto seguido de uno o más numeros. 
+    El ? al final es para que sea opcional, busca enteros o decimales. 
+    | es un "o" y busca la coincidencia en el otro lado del punto. 
+    \d+\b Busca el final del numero.*/
     const countNumbers = (text.match(/\b\d+(\.\d+)?\b|\.\d+\b/g) || []).length; //d+ busca los numeros y || [] devuelve un array vacio
     return countNumbers;
   },

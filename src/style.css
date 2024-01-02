@@ -55,7 +55,8 @@ ul {
 #reset-button {
     display: flex;
     margin-top: 2%;
-    margin-left: 52%;
+    margin-left: 50%;
+    margin-right: 38%;
     text-align: center;
     background-color: #04aa6d;
     border: none;
@@ -66,7 +67,7 @@ ul {
 }
 
 footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 10px;
     width: 100vw;
     text-align: center;
