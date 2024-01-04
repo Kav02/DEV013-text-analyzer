@@ -55,19 +55,19 @@ ul {
 #reset-button {
     display: flex;
     margin-top: 2%;
-    margin-left: 50%;
-    margin-right: 38%;
+    margin-left: 30%;
+    margin-right: 60%;
     text-align: center;
     background-color: #04aa6d;
     border: none;
     color: white;
     padding: 15px 32px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 8px;
 }
 
 footer {
-    /*position: fixed;*/
+    position: fixed;
     bottom: 10px;
     width: 100vw;
     text-align: center;
