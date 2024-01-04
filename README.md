@@ -686,11 +686,11 @@ Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
 - [X] **Seguir los principios básicos de diseño visual**
 
 ## 10. Funcionamiento
-Conteo de palabras: utiliza split para separar las palabras en cada espacio vacío. Además emplea un if para verificar que la variable existe y un bucle for para ir sumando las parabras. 
-Conteo de caracteres: utiliza .length para encontrar el total de caracteres
-Conteo de caracteres sin espacios: utiliza un regex para eliminar los caracteres especiales
-Promedio de longitud de palabra: utiliza el total de caracteres y los divide entre el conteo de palabras obtenido anteriormente.
-Contar numeros: identifica los números que no están dentro de una palabra e identifica los enteros o los decimales por medio del . Ademas usa "o vacio" para asegurarse que si no hay numeros tenga un array.
-Sumar los números: usa el mismo regex anterior con un bucle for of, porque se debe acumular los numeros en una matriz para poder irlos sumando. 
+* Conteo de palabras: utiliza split para separar las palabras en cada espacio vacío. Además emplea un if para verificar que la variable existe y un bucle for para ir sumando las parabras. 
+* Conteo de caracteres: utiliza .length para encontrar el total de caracteres
+* Conteo de caracteres sin espacios: utiliza un regex para eliminar los caracteres especiales
+* Promedio de longitud de palabra: utiliza el total de caracteres y los divide entre el conteo de palabras obtenido anteriormente.
+* Contar numeros: identifica los números que no están dentro de una palabra e identifica los enteros o los decimales por medio del . Ademas usa "o vacio" para asegurarse que si no hay numeros tenga un array.
+* Sumar los números: usa el mismo regex anterior con un bucle for of, porque se debe acumular los numeros en una matriz para poder irlos sumando. 
 
 
