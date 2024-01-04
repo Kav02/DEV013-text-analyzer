@@ -8,7 +8,6 @@ body {
 }
 
 header {
-    /*display: flex;*/
     margin-left: 40px;
     font-size: 3vw;
     color: #142c86;
@@ -16,7 +15,6 @@ header {
 }
 
 h2 {
-    /*display: flex;*/
     margin-left: 40px;
     color: #142c86;
     font-family: Roboto, sans-serif;
@@ -37,7 +35,7 @@ ul {
     column-count: 2;
     }
 
-
+/*Selector de clase*/
 .lista {
     margin-top: 2%;
     margin-left: 40px;
@@ -51,7 +49,7 @@ ul {
     font-size: 16px;
     border-radius: 8px;
 }
-
+/*Selector de ID*/
 #reset-button {
     display: flex;
     margin-top: 2%;

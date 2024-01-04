@@ -34,12 +34,7 @@ const numberSumLi = document.querySelector(".lista[data-testid='number-sum']");
 const averageLengthLi = document.querySelector(
   ".lista[data-testid='word-length-average']"
 );
-  
 
-//function capture_input() {
-//  texto = textarea.value;
-//}
-//textarea.addEventListener("input", capture_input);
 textarea.addEventListener("input", () => {
   totalCharacter = analyzer.getCharacterCount(textarea.value);
   totalCharacterNo = analyzer.getCharacterCountExcludingSpaces(textarea.value);
