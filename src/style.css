@@ -1,4 +1,4 @@
-body {
+body{
     display: flex;
     flex-direction: column;
     background-image: url("../img/analizadorfondo.png");
@@ -65,7 +65,7 @@ ul {
 }
 
 footer {
-    position: fixed;
+    /* position: relative; */
     bottom: 10px;
     width: 100vw;
     text-align: center;

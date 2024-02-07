@@ -34,8 +34,8 @@ const analyzer = {
     const sumCaracteres = text.replace(/ /g,"").length;
     const sumWords = analyzer.getWordCount(text);
     const averageWords = sumCaracteres / sumWords;
-    const promedioPalabras = averageWords.toFixed(2);
-    return Number(promedioPalabras);
+    const numAverageWords = averageWords.toFixed(2);
+    return Number(numAverageWords);
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
